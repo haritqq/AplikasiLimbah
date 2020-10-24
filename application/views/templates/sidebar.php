@@ -35,37 +35,37 @@
 
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Mahasiswa</span>
+            <i class="fa fa-graduation-cap"></i> <span>Mahasiswa</span>
           </a>
         </li>
 
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dosen</span>
+            <i class="fa fa-user"></i> <span>Dosen</span>
           </a>
         </li>
 
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Jadwal</span>
+            <i class="fa fa-book"></i> <span>Jadwal</span>
           </a>
         </li>
 
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Jurusan</span>
+            <i class="fa fa-university"></i> <span>Jurusan</span>
           </a>
         </li>
 
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Ganti Password</span>
+            <i class="fa fa-lock"></i> <span>Ganti Password</span>
           </a>
         </li>
 
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Log uot</span>
+            <i class="fa fa-sign-out"></i> <span>Log uot</span>
           </a>
         </li>
 
