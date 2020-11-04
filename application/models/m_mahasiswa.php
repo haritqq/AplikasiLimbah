@@ -10,9 +10,9 @@ class M_mahasiswa extends CI_Model{
         $this->db->insert($table,$data);
     }
 
-    public function hapus_data($where, $table){
-        $this->db->$where($where);
-        $this->db->$delete($table);
+    public function hapus_data($where,$table){
+        $this->db->where($where);
+        $this->db->delete($table);
     }
     
 }
