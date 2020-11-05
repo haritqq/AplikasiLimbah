@@ -28,11 +28,29 @@
         <div class="form-group">
             <label for="">Jurusan</label>
             <div class="form-group">
-              <select class="form-control" name="jurusan" value="<?php echo $mhs->jurusan ?>">
-                  <option>Sistem Informasi</option>
-                  <option>Teknik Informastika</option>
-                  <option>Teknik Komputer</option>
-              </select>
+                <select class="form-control" name="jurusan" value="<?php echo $mhs->jurusan ?>">
+                    <option>Sistem Informasi</option>
+                    <option>Teknik Informatika</option>
+                    <option>Teknik Komputer</option>
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label for="">Alamat</label>
+            <input type="text" name="alamat" class="form-control" 
+            value="<?php echo $mhs->alamat ?>">
+        </div>
+
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" name="email" class="form-control" 
+            value="<?php echo $mhs->email ?>">
+        </div>
+
+        <div class="form-group">
+            <label for="">No. Telepon</label>
+            <input type="text" name="no_telp" class="form-control" 
+            value="<?php echo $mhs->no_telp ?>">
         </div>
 
         <button type="reset" class="btn btn-primary">Reset</button>
