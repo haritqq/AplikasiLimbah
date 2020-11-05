@@ -27,9 +27,14 @@
 
         <div class="form-group">
             <label for="">Jurusan</label>
-            <input type="text" name="jurusan" class="form-control" 
-            value="<?php echo $mhs->jurusan ?>">
-        </div>
+            <div class="form-group">
+              <label for="jurusan">Jurusan</label>
+              <select class="form-control" name="jurusan" value="<?php echo $mhs->jurusan ?>">
+                  <option>Sistem Informasi</option>
+                  <option>Teknik Informastika</option>
+                  <option>Teknik Komputer</option>
+              </select>
+            </div>
 
         <button type="reset" class="btn btn-primary">Reset</button>
         <button type="submit" class="btn btn-primary">Simpan</button>
