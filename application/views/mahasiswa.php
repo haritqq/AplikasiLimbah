@@ -10,8 +10,15 @@
       </ol>
     </section>
 
+    <!-- buuton Tambah data -->
     <section class="content">
       <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-plus"></I>Tambah Data Mahasiswa</button>
+      
+    <!-- button print -->
+    <a class="btn btn-danger" href="<?php echo base_url('mahasiswa/print') ?>">
+    <i class="fa fa-print"></i>Print
+    </a>
+      
       <table class="table">
         <tr>
           <th>NO</th>
