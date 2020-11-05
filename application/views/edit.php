@@ -21,20 +21,19 @@
 
         <div class="form-group">
             <label for="">Tanggal Lahir</label>
-            <input type="text" name="tgl_lahir" class="form-control" 
+            <input type="date" name="tgl_lahir" class="form-control" 
             value="<?php echo $mhs->tgl_lahir ?>">
         </div>
 
         <div class="form-group">
             <label for="">Jurusan</label>
             <div class="form-group">
-              <label for="jurusan">Jurusan</label>
               <select class="form-control" name="jurusan" value="<?php echo $mhs->jurusan ?>">
                   <option>Sistem Informasi</option>
                   <option>Teknik Informastika</option>
                   <option>Teknik Komputer</option>
               </select>
-            </div>
+        </div>
 
         <button type="reset" class="btn btn-primary">Reset</button>
         <button type="submit" class="btn btn-primary">Simpan</button>
