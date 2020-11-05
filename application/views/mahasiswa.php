@@ -67,7 +67,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" action="<?php echo base_url(). 'mahasiswa/tambah_aksi' ?>">
+        <?php echo form_open_multipart('mahasiswa/tambah_aksi'); ?>
             
             <div class="form-group">
               <label>Nama Mahasiswa</label>
@@ -108,10 +108,15 @@
               <input type="text" name="no_telp" class="form-control">
             </div>
 
+            <div class="form-group">
+              <label>Upload Foto</label>
+              <input type="file" name="foto" class="form-control">
+            </div>
+
             <button type="reset" class="btn btn-danger" data-dismiss="modal">Reset</button>
             <button type="submit" class="btn btn-primary">Simpan</button>
 
-        </form>
+        <?php echo form_close(); ?>
       </div>
     </div>
   </div>
