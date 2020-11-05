@@ -32,8 +32,18 @@
           <td><?php echo $mhs->nim ?></td>
           <td><?php echo $mhs->tgl_lahir ?></td>
           <td><?php echo $mhs->jurusan ?></td>
-          <td onclick="javascript: return confirm('Anda yakin hapus')"><?php echo anchor('mahasiswa/hapus/'.$mhs->id, '<div class="btn btn-danger btn-sm" ><i class="fa fa-trash"></i></div>') ?></td>
-          <td><div class="btn btn-primary btn-sm" ><i class="fa fa-edit"></i></div></td>
+          <!-- Button Delete -->
+          <td onclick="javascript: return confirm('Anda yakin hapus')">
+              <?php echo anchor('mahasiswa/hapus/'.$mhs->id, '<div class="btn btn-danger btn-sm" >
+                <i class="fa fa-trash"></i></div>') 
+              ?>
+          </td>
+          <!-- Button Edit -->
+          <td>
+              <?php echo anchor('mahasiswa/edit/'.$mhs->id, '<div class="btn btn-primary btn-sm" >
+              <i class="fa fa-edit"></i></div>') 
+              ?>
+              </td>
         </tr>
 
         <?php endforeach; ?>

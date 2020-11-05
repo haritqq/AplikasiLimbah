@@ -40,4 +40,14 @@ class Mahasiswa extends CI_Controller{
         $this->m_mahasiswa->hapus_data($where, 'tb_mahasiswa');
         redirect ('mahasiswa/index');
     }
+
+    public function edit($id){
+        $where = array('id' =>$id);
+        $data['mahasiswa'] = $this->m_mahasiswa->edit_data($where,
+            'tb_mahasiswa')->result();
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('edit', $data);
+        $this->load->view('templates/footer');
+    }
 }  
