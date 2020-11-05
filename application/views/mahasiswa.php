@@ -12,12 +12,15 @@
 
     <!-- buuton Tambah data -->
     <section class="content">
-      <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-plus"></I>Tambah Data Mahasiswa</button>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-plus"></I> Tambah Data Mahasiswa</button>
       
     <!-- button print -->
     <a class="btn btn-danger" href="<?php echo base_url('mahasiswa/print') ?>">
-    <i class="fa fa-print"></i>Print
-    </a>
+    <i class="fa fa-print"></i> Print</a>
+    
+    <!-- button ekpor -->
+    <a class="btn btn-warning" href="<?php echo base_url('mahasiswa/pdf') ?>">
+    <i class="fa fa-file"></i> Exsport PDF</a>
       
       <table class="table">
         <tr>
