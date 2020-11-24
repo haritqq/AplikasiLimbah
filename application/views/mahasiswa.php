@@ -19,8 +19,17 @@
     <i class="fa fa-print"></i> Print</a>
     
     <!-- button ekpor -->
-    <a class="btn btn-warning" href="<?php echo base_url('mahasiswa/pdf') ?>">
-    <i class="fa fa-file"></i> Exsport PDF</a>
+    <div class="dropdown inline">
+      <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <i class="fa fa-download"></i> Export 
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a href="<?php echo base_url('mahasiswa/pdf') ?>">PDF</a></li>
+          <li><a href="<?php echo base_url('mahasiswa/excel') ?>">Excel</a></li>
+        </ul>
+    </div>
+    
+
       
       <table class="table">
         <tr>
