@@ -17,7 +17,6 @@
             <th>Alamat</th>
             <th>Email</th>
             <th>No. Telepon</th>
-            <th>Jurusan</th>
         </tr>
 
         <?php $no= 1; foreach ($mahasiswa as $mhs): ?>
