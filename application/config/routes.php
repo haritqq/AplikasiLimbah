@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -49,6 +49,55 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'mahasiswa';
+
+//frontend
+$route['default_controller'] = 'HomeController';
+
+$route['login'] = 'AuthController/login';
+$route['logout'] = 'AuthController/logout';
+$route['register'] = 'AuthController/register';
+
+$route['spanduk'] = 'PesanController/pesanSpanduk';
+$route['stiker'] = 'PesanController/pesanStiker';
+$route['kartu'] = 'PesanController/pesanKartu';
+$route['brosur'] = 'PesanController/pesanBrosur';
+
+$route['hapus/spanduk/(:any)'] = 'PesanController/hapusSpanduk/$1';
+$route['hapus/stiker/(:any)'] = 'PesanController/hapusStiker/$1';
+$route['hapus/kartu/(:any)'] = 'PesanController/hapusKartu/$1';
+$route['hapus/brosur/(:any)'] = 'PesanController/hapusBrosur/$1';
+
+$route['keranjang'] = 'BayarController/keranjang';
+$route['bayar/(:any)'] = 'BayarController/bayar/$1';
+$route['selesai/(:any)/(:any)'] = 'BayarController/selesai/$1/$2';
+$route['konfirmasi/(:any)'] = 'BayarController/konfirmasi/$1';
+
+$route['profil'] = 'ProfilController';
+$route['pesanan'] = 'ProfilController/pesanan';
+$route['desain/(:any)'] = 'ProfilController/desain/$1';
+$route['detail-desain/(:any)'] = 'ProfilController/detailDesain/$1';
+$route['detail-pesanan/(:any)'] = 'ProfilController/detailPesanan/$1';
+
+
+//backend
+$route['admin'] = 'backend/DashboardController';
+$route['admin/login'] = 'backend/AuthController/login';
+$route['admin/logout'] = 'backend/AuthController/logout';
+
+$route['admin/pelanggan'] = 'backend/PelangganController';
+$route['admin/transaksi'] = 'backend/TransaksiController';
+$route['admin/transaksi/lihat/(:any)'] = 'backend/TransaksiController/lihat/$1';
+$route['admin/transaksi/konfirmasi/(:any)'] = 'backend/TransaksiController/konfirmasi/$1';
+$route['admin/transaksi/email/(:any)'] = 'backend/TransaksiController/email/$1';
+
+$route['admin/pesanan'] = 'backend/PesananController';
+$route['admin/pesanan/lihat/(:any)'] = 'backend/PesananController/lihat/$1';
+$route['admin/pesanan/foto/(:any)'] = 'backend/PesananController/foto/$1';
+$route['admin/pesanan/desain/(:any)'] = 'backend/PesananController/desain/$1';
+$route['admin/pesanan/selesai/(:any)'] = 'backend/PesananController/selesai/$1';
+
+$route['admin/laporan/(:any)'] = 'backend/LaporanController/index/$1';
+
+$route['default_controller'] = 'landing_page';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

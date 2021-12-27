@@ -1,0 +1,22 @@
+AKUN SPK PM
+
+ADMIN
+
+email : admin@admin.com
+pass  : @admin123
+
+
+email : admin2@admin.com
+pass  : @admin123
+
+DIREKTUR
+
+email : direktur@direktur.com
+pass  : @direktur123
+
+AKUN DONATUR
+email : sigit1@mail.com
+pass  : 1234
+AKUN TOKO
+email : sigit2@mail.com
+pass  : 1234
